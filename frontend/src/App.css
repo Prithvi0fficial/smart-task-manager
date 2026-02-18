@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Your Smart Task Manager styles start here --- */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background: #45a049;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.task.completed {
+  background: #e0ffe0;
+}
+
+.task-title {
+  flex: 1;
+  cursor: pointer;
+}
+.task.completed .task-title {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+button.edit {
+  background: #2196F3;
+  color: white;
+}
+
+button.edit:hover {
+  background: #1976D2;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.badge.low {
+  background: #21f3d0;
+}
+
+.badge.medium {
+  background: #FFC107;
+}
+
+.badge.high {
+  background: #F44336;
+}
+
+.edit-task input,
+.edit-task select {
+  padding: 5px;
+  margin-right: 5px;
+
+}
+@media (max-width: 480px) {
+  .add-task {
+    flex-direction: column;
+  }
+  
+  .add-task input,
+  .add-task select,
+  .add-task button {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
