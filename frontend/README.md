@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+## Smart Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small task management application built with Python Flask (API) and React, implementing full CRUD operations with task priority, status, and logging.
+________________________________________
+## Tech Stack
+•	Backend: Python 3.10, Flask, Flask-SQLAlchemy
 
-## Available Scripts
+•	Frontend: React, Axios
 
-In the project directory, you can run:
+•	Database: SQLite
 
-### `npm start`
+•	Tools: VSCode, Git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+•	Other: Logging for create/update/delete, client-server validation
+________________________________________
+## Features
+•	Create, update, delete tasks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+•	Mark tasks as completed/pending
 
-### `npm test`
+•	Edit task priority: low, medium, high
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+•	Validations to prevent invalid task data
 
-### `npm run build`
+•	Logging for create, update, delete actions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+•	Responsive UI with modern styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+•	All API interactions handled with Axios
+________________________________________
+## Installation & Setup
+Backend
+1.	Navigate to backend folder:
+ 	cd backend
+2.	Install dependencies:
+ 	pip install -r requirements.txt
+3.	Run the app:
+ 	python run.py
+ 	The API will run on http://127.0.0.1:5000.
+Frontend
+1.	Navigate to frontend folder:
+ 	cd frontend
+2.	Install dependencies:
+ 	npm install
+3.	Start the development server:
+ 	npm start
+ 	The frontend will run on http://localhost:3000.
+________________________________________
+## API Endpoints
+Method	Endpoint	Description
+GET	/tasks	Get all tasks
+POST	/tasks	Create a new task
+GET	/tasks/<id>	Get single task
+PUT	/tasks/<id>	Update task
+DELETE	/tasks/<id>	Delete task
+All endpoints validate input data and return JSON responses.
+________________________________________
+## Logging
+Backend logs every create, update, delete action with task ID for traceability.
+Update actions also log status and priority changes.
+________________________________________
+## AI Guidance 
+•	AI-assisted planning for React state management and Axios API integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+•	Used structured prompts to verify proper backend validations and frontend updates
+________________________________________
+## Known Limitations / Extensions
+•	No authentication/login (can be added for multi-user support)
 
-### `npm run eject`
+•	Could extend to persistent database like PostgreSQL for production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+•	Can add due dates, filtering, or search functionality
+________________________________________
+## Testing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend testing is implemented using pytest.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Test Results
+- Total tests: 5
+- Status: All tests passed
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run Tests
+pytest
 
-## Learn More
+Tests cover:
+- Core backend functionality
+- API validation
+- Database logic
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+________________________________________
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Health Check 
 
-### Code Splitting
+•	GET /health
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+•	Returns system and database status.
 
-### Analyzing the Bundle Size
+•	Used for monitoring and failure detection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+               curl http://127.0.0.1:5000/health
 
-### Making a Progressive Web App
+•	Purpose: Observability and failure diagnosis.
+________________________________________
+## PRITHVI V
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+BCA Graduate – Software Development and Web Design
+Prepared for Better Software Associate Software Engineer Assessment
+All code created specifically for this assessment. 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
