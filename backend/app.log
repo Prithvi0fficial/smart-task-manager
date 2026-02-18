@@ -347,3 +347,71 @@
 2026-02-18 00:24:52,455 | INFO |  * Debugger PIN: 563-812-482
 2026-02-18 00:25:06,472 | INFO | 127.0.0.1 - - [18/Feb/2026 00:25:06] "[33mGET / HTTP/1.1[0m" 404 -
 2026-02-18 00:25:16,728 | INFO | 127.0.0.1 - - [18/Feb/2026 00:25:16] "GET /health HTTP/1.1" 200 -
+2026-02-18 12:42:05,134 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-18 12:42:05,135 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-18 12:42:05,139 | INFO |  * Restarting with stat
+2026-02-18 12:42:14,630 | WARNING |  * Debugger is active!
+2026-02-18 12:42:14,644 | INFO |  * Debugger PIN: 563-812-482
+2026-02-18 12:48:40,534 | INFO | 127.0.0.1 - - [18/Feb/2026 12:48:40] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:48:40,620 | INFO | 127.0.0.1 - - [18/Feb/2026 12:48:40] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:29,836 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:29] "OPTIONS /tasks/1 HTTP/1.1" 200 -
+2026-02-18 12:49:30,467 | INFO | Task deleted: 1
+2026-02-18 12:49:30,469 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:30] "DELETE /tasks/1 HTTP/1.1" 200 -
+2026-02-18 12:49:30,536 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:30] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:37,025 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:37] "OPTIONS /tasks/2 HTTP/1.1" 200 -
+2026-02-18 12:49:37,280 | INFO | Task updated: 2 | Title: Test -> Test, Status: pending -> pending, Priority: medium -> high
+2026-02-18 12:49:37,281 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:37] "PUT /tasks/2 HTTP/1.1" 200 -
+2026-02-18 12:49:37,360 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:37] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:39,131 | INFO | Task deleted: 2
+2026-02-18 12:49:39,132 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:39] "DELETE /tasks/2 HTTP/1.1" 200 -
+2026-02-18 12:49:39,216 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:39] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:42,183 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:42] "OPTIONS /tasks/4 HTTP/1.1" 200 -
+2026-02-18 12:49:42,289 | INFO | Task updated: 4 | Title: Test task -> Test task, Status: pending -> completed, Priority: medium -> medium
+2026-02-18 12:49:42,290 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:42] "PUT /tasks/4 HTTP/1.1" 200 -
+2026-02-18 12:49:42,355 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:42] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:44,783 | INFO | Task deleted: 4
+2026-02-18 12:49:44,784 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:44] "DELETE /tasks/4 HTTP/1.1" 200 -
+2026-02-18 12:49:44,816 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:44] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:45,468 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:45] "OPTIONS /tasks/6 HTTP/1.1" 200 -
+2026-02-18 12:49:46,098 | INFO | Task deleted: 6
+2026-02-18 12:49:46,100 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "DELETE /tasks/6 HTTP/1.1" 200 -
+2026-02-18 12:49:46,108 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "[33mDELETE /tasks/6 HTTP/1.1[0m" 404 -
+2026-02-18 12:49:46,131 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "[33mDELETE /tasks/6 HTTP/1.1[0m" 404 -
+2026-02-18 12:49:46,134 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "[33mDELETE /tasks/6 HTTP/1.1[0m" 404 -
+2026-02-18 12:49:46,408 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:46,527 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "[33mDELETE /tasks/6 HTTP/1.1[0m" 404 -
+2026-02-18 12:49:46,620 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:46,857 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:46,894 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:46] "OPTIONS /tasks/7 HTTP/1.1" 200 -
+2026-02-18 12:49:48,126 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "OPTIONS /tasks/8 HTTP/1.1" 200 -
+2026-02-18 12:49:48,372 | INFO | Task deleted: 7
+2026-02-18 12:49:48,373 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "DELETE /tasks/7 HTTP/1.1" 200 -
+2026-02-18 12:49:48,492 | INFO | Task deleted: 8
+2026-02-18 12:49:48,494 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "DELETE /tasks/8 HTTP/1.1" 200 -
+2026-02-18 12:49:48,508 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:48,608 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:48,851 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:48,958 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:48] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:50,108 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:50] "OPTIONS /tasks/9 HTTP/1.1" 200 -
+2026-02-18 12:49:51,035 | INFO | Task deleted: 9
+2026-02-18 12:49:51,036 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:51] "DELETE /tasks/9 HTTP/1.1" 200 -
+2026-02-18 12:49:51,178 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:51] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 12:49:51,343 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:51] "OPTIONS /tasks/5 HTTP/1.1" 200 -
+2026-02-18 12:49:52,340 | INFO | Task deleted: 5
+2026-02-18 12:49:52,341 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:52] "DELETE /tasks/5 HTTP/1.1" 200 -
+2026-02-18 12:49:52,461 | INFO | 127.0.0.1 - - [18/Feb/2026 12:49:52] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 13:10:46,373 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-18 13:10:46,374 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-18 13:10:46,380 | INFO |  * Restarting with stat
+2026-02-18 13:10:48,598 | WARNING |  * Debugger is active!
+2026-02-18 13:10:48,613 | INFO |  * Debugger PIN: 563-812-482
+2026-02-18 13:13:48,460 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-18 13:13:48,460 | INFO | [33mPress CTRL+C to quit[0m
+2026-02-18 13:13:48,467 | INFO |  * Restarting with stat
+2026-02-18 13:13:50,944 | WARNING |  * Debugger is active!
+2026-02-18 13:13:50,958 | INFO |  * Debugger PIN: 563-812-482
+2026-02-18 13:14:28,577 | INFO | 127.0.0.1 - - [18/Feb/2026 13:14:28] "GET /tasks HTTP/1.1" 200 -
+2026-02-18 13:14:28,643 | INFO | 127.0.0.1 - - [18/Feb/2026 13:14:28] "GET /tasks HTTP/1.1" 200 -
