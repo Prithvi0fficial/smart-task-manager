@@ -11,7 +11,6 @@ Smart Task Manager is a full-stack web application for managing tasks with authe
 - Located in `/frontend`
 
 ### Backend
-- Handles authentication
 - Task CRUD operations
 - API endpoints
 - Located in `/backend`
